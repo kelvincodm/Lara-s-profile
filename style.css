@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;;
+}
+body {
+    background-color: black;
+    color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    padding: 20px;
+    position: fixed;
+    background-color: black;
+    width: 98%;
+    top: 0;
+}
+nav .socials-box {
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 2vh;
+}
+.socials a {
+    color: white;
+}
+.introbox h1 {
+    font-size: 55px;
+}
+.introbox {
+    text-align: center;
+    margin-top: 15vh;
+    padding: 20px;
+    border-bottom: 2px solid white;
+    padding-bottom: 50px;
+}
+.introbox p {
+        line-height: 2;
+}
+.projects {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.projectbox {
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5;
+}
+.project-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 6vh;
+}
+.projects button {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.service {
+    padding: 30px;
+    border-bottom: 2px solid white;
+}
+.service-grid {
+        display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin-top: 6vh;
+}
+.servicebox {
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 10px;
+}
+.service ul li {
+    padding: 5px;
+    font-size: 12px;
+    margin-left: 4vh;
+}
+.socials-two {
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 5vh;
+    display: none;
+}
+.socials-boxtwo {
+     border: 1px solid white;
+    border-radius: 7px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+.socials-two a {
+    color: white;
+}
+@media only screen and (max-width: 550px) {
+    .socials {
+        display: none;
+    }
+    .socials-two {
+        display: flex;
+    }
+}
